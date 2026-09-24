@@ -11,7 +11,7 @@ class Program
         {
             Console.WriteLine();
             Console.WriteLine("=== Textverktyget ===");
-            Console.WriteLine("1. Vänd på en text");
+            Console.WriteLine("1. Visa en text baklänges");
             Console.WriteLine("2. Räkna vokaler i en text");
             Console.WriteLine("3. Avsluta");
             Console.Write("Välj: ");
