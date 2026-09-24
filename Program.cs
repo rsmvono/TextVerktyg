@@ -58,11 +58,22 @@ class Program
         return reversed;
     }
 
-    // TODO: Returnera antalet vokaler i texten.
     // Vokaler: a, e, i, o, u, y, å, ä, ö – både stora och små bokstäver räknas.
     // Exempel: "Hej på dig" -> 3
     static int CountVowels(string text)
     {
-        throw new NotImplementedException();
+        char[] textChar;
+        text = text.ToLower();
+        textChar = text.ToCharArray();
+        int count = 0;
+
+        foreach (char character in textChar)
+        {
+            if ("aeiouyåäö".Contains(character))
+            {
+                count++;
+            }
+        }
+        return count;
     }
 }
