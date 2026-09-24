@@ -6,7 +6,7 @@ class Program
     {
         Console.OutputEncoding = System.Text.Encoding.UTF8;
         bool running = true;
-
+        Console.Clear();
         while (running)
         {
             Console.WriteLine();
