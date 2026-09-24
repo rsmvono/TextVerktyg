@@ -21,23 +21,27 @@ class Program
             switch (choice)
             {
                 case "1":
+                    Console.Clear();
                     Console.Write("Skriv en text: ");
                     string textToReverse = Console.ReadLine() ?? "";
                     Console.WriteLine($"Baklänges: {ReverseText(textToReverse)}");
                     break;
 
                 case "2":
+                    Console.Clear();
                     Console.Write("Skriv en text: ");
                     string textToCount = Console.ReadLine() ?? "";
                     Console.WriteLine($"Antal vokaler: {CountVowels(textToCount)}");
                     break;
 
                 case "3":
+                    Console.Clear();
                     running = false;
                     Console.WriteLine("Hej då!");
                     break;
 
                 default:
+                    Console.Clear();
                     Console.WriteLine("Ogiltigt val, försök igen.");
                     break;
             }
