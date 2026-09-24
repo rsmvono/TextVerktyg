@@ -44,11 +44,18 @@ class Program
         }
     }
 
-    // TODO: Returnera texten baklänges.
     // Exempel: "Hej på dig" -> "gid åp jeH"
     static string ReverseText(string text)
     {
-        throw new NotImplementedException();
+        char[] textChar;
+        textChar = text.ToCharArray();
+        string reversed = "";
+
+        for (int i = textChar.Length - 1; i >= 0; i--)
+        {
+            reversed += textChar[i];
+        }
+        return reversed;
     }
 
     // TODO: Returnera antalet vokaler i texten.
